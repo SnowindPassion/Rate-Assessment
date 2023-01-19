@@ -22,6 +22,10 @@ export const ExchangeRateForm = ({ rates }: ExchangeRateFormProps) => {
     }
 
     const rate = rates.find((r) => r.code === currencyCode);
+
+    if(!rate) {
+      return setResult('');
+    }
     const amount = rate ? Math.ceil(1000 * sourceAmount * rate.amount / rate.rate) / 1000.0 : 0;
 
     setResult(`${amount} ${currencyCode}`);
