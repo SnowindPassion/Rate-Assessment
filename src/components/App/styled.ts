@@ -11,6 +11,9 @@ export const Container = styled.div`
   font-size: 15px;
 `;
 
+export const Error = styled.div`
+`;
+
 export const Title = styled.h1`
   margin: 0px;
 
