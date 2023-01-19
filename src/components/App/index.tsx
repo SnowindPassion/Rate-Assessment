@@ -19,7 +19,7 @@ export const App = () => {
 
   return (
     <Container className="App">
-      <Title>Exchange Rate</Title>
+      <Title>Exchange Rate Calculator</Title>
       <ExchangeRateForm rates={data} isFetching={isFetching} />
       <RateList rates={data} isFetching={isFetching} />
     </Container>

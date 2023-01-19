@@ -10,7 +10,7 @@ interface ExchangeRateFormProps {
 
 export const ExchangeRateForm = ({ rates }: ExchangeRateFormProps) => {
   const [currencyCode, setCurrencyCode] = useState('');
-  const [sourceAmount, setSourceAmout] = useState(0);
+  const [sourceAmount, setSourceAmout] = useState(1000);
   const [result, setResult] = useState('');
 
   /**
