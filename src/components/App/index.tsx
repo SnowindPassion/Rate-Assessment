@@ -1,4 +1,5 @@
 import { useExchangeRates } from '../../hooks/useExchangeRates';
+import { RateList } from '../RateList';
 
 import { Container, Title, Error } from './styled';
 
@@ -15,11 +16,10 @@ export const App = () => {
     );
   }
 
-  console.log(isFetching, data);
-
   return (
     <Container className="App">
       <Title>Exchange Rate</Title>
+      <RateList rates={data} isFetching={isFetching} />
     </Container>
   );
 }
